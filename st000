@@ -1,0 +1,29 @@
+#Aufgabe1
+#a)
+223/5656
+#b)
+1-0.0394
+0.9606^21
+#c)
+plot(0:18,dbinom(0:18,18,0.0394), type = "l")
+#i)
+dbinom(0,18,0.0394)
+#ii)
+dbinom(5,18,0.0394)
+#iii)
+sum(dbinom(3:18,18,0.0394))
+#vi)
+sum(dbinom(0:2,18,0.0394))
+
+#Aufgabe2
+#a)
+
+#b)
+ppois(8, lambda = naccidents, lower=FALSE)
+1-ppois(8,lambda = naccidents)
+gpois(0,95,lambda = naccidents)
+#c)
+avg = naccidents*3
+0.95^3
+gpois(0.95^3,naccidents)#wenn in drei Jahren die unfälle 0:19:0 sind passt nicht
+gpois(0.95,avg)
